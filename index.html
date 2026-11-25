@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mashuuru Manor — Premium Countryside Hotel with Mountain Views</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site" class="pg">
+<header class="site-header"><div class="container header-inner">
+<a href="#" class="logo" data-go="top">Mashuuru <em>Manor</em></a>
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+<nav class="nav"><a href="#" data-go="about">About</a><a href="#" data-go="rooms">Rooms</a><a href="#" data-go="packages">Packages</a><a href="#" data-go="amenities">Amenities</a><a href="#" data-go="experiences">Experiences</a><a href="#menu">Menu</a><a href="#" data-fd>Contact</a></nav>
+<a href="#" data-go="book" class="btn btn-glass btn-sm">Book now</a></div></header>
+
+<section class="hero" id="top">
+<img id="heroimg" class="hero-img" alt="Mashuuru Manor hotel entrance with lit windows, gardens and a red tiled roof">
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<p class="eyebrow gold">Welcome to Mashuuru Manor</p>
+<h1>Where the countryside <em>meets the mountains</em></h1>
+<p class="lead">A premium hotel that offers guests comfortability and serene views of the mountains — open meadows, warm hospitality and unhurried days.</p>
+<div class="hero-actions"><a href="#" data-go="book" class="btn btn-gold">Book your stay</a><a href="#" data-go="rooms" class="btn btn-glass">Explore rooms</a></div>
+<form class="search" id="search">
+<label>Check in<input name="ci" data-dp="hero" data-role="ci" readonly placeholder="Select date" autocomplete="off"></label>
+<label>Check out<input name="co" data-dp="hero" data-role="co" readonly placeholder="Select date" autocomplete="off"></label>
+<label>Guests<input type="number" name="guests" min="1" max="12" value="2"></label>
+<label>Promo code<input name="promo" placeholder="Optional"></label>
+<button class="btn btn-gold" type="submit">Search</button>
+</form>
+</div></section>
+
+<section id="about" class="container section"><div class="about-card reveal"><div>
+<p class="eyebrow gold">Our story</p><h2>A legacy of comfort and serenity</h2>
+<p class="muted-light">Every room is designed around the view, every meal around the season, and every stay around your rest.</p>
+<div class="stats"><a href="#" data-go="rooms"><strong id="nrooms">24</strong><span>Private rooms</span></a><a href="#" data-go="experiences"><strong>120</strong><span>Acres of meadow</span></a><a href="#" data-go="book"><strong>4.9</strong><span>Guest rating</span></a></div></div>
+<div class="about-image"><img id="aboutimg" alt="Fireside lounge with windows facing green mountains"><div class="since"><span>Since</span><strong>2008</strong></div></div></div></section>
+
+<section id="rooms" class="container section-tight"><div class="section-head"><div><p class="eyebrow moss">Stay with us</p><h2>Rooms &amp; suites</h2></div><a href="#" data-go="book" class="eyebrow link">Check availability &rarr;</a></div>
+<p id="searchnote" class="small" style="margin:-24px 0 24px;color:var(--muted)">Choose your dates in the search bar to see live availability. Tap a room to see photos and its calendar.</p>
+<div class="grid-3" id="roomgrid"></div></section>
+
+<section id="packages" class="container section-tight"><div class="section-head"><div><p class="eyebrow moss">Curated stays</p><h2>Exclusive packages</h2></div></div><div class="pkgs" id="pkgs"></div></section>
+
+<section id="amenities" class="amenities"><div class="container center"><p class="eyebrow moss">Thoughtful comforts</p><h2>Amenities</h2><div class="amenity-grid" id="amgrid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"></div></div></section>
+
+<section id="experiences" class="container section"><p class="eyebrow moss">More than a stay</p><h2>Experiences</h2><div class="exps" id="exps"></div></section>
+
+<section id="book" class="container section-tight"><div class="book-card"><img id="bookimg" alt="Mountain View Suite at sunrise">
+<div class="book-body"><p class="eyebrow gold">Reservations</p><h2>Become a Mashuuru Manor guest</h2>
+<p class="muted-light small">Send your dates and we confirm your stay within 24 hours.</p>
+<form id="booking-form" novalidate>
+<input type="text" name="website" class="hp" tabindex="-1" autocomplete="off">
+<div class="full"><input name="full_name" placeholder="Full name" maxlength="100" required></div>
+<div><input name="email" type="email" placeholder="Email" maxlength="255" required></div>
+<div><input name="phone" type="tel" placeholder="Phone (optional)" maxlength="30"></div>
+<label>Check in<input name="check_in" data-dp="book" data-role="ci" readonly placeholder="Select date" autocomplete="off"></label>
+<label>Check out<input name="check_out" data-dp="book" data-role="co" readonly placeholder="Select date" autocomplete="off"></label>
+<label>Room or package<select name="stay" id="staysel"></select></label>
+<label>Guests<input name="guests" type="number" min="1" max="12" value="2"></label>
+<div><input name="promo" placeholder="Promo code (optional)"></div>
+<div class="full"><textarea name="message" rows="2" placeholder="Special requests (optional)" maxlength="1000"></textarea></div>
+<p class="full avail" id="avail"></p>
+<p id="form-status" class="full status" role="status"></p>
+<div class="full"><button type="submit" class="btn btn-gold">Request my stay</button></div>
+</form></div></div></section>
+
+<footer id="contact" class="footer"><div class="container footer-grid">
+<div><p class="logo">Mashuuru <em>Manor</em></p><p class="muted-light small">A premium countryside retreat with serene mountain views.</p></div>
+<div><p class="eyebrow gold">Explore</p><ul><li><a href="#" data-go="rooms">Rooms</a></li><li><a href="#" data-go="packages">Packages</a></li><li><a href="#" data-go="experiences">Experiences</a></li><li><a href="#menu">Menu &amp; Food</a></li><li><a href="#" data-go="book">Book</a></li></ul></div>
+<div><p class="eyebrow gold">Contact</p><ul><li><a href="https://www.google.com/maps/search/Mashuuru+Kajiado+Kenya" target="_blank" rel="noopener">Mashuuru, Kajiado County, Kenya</a></li><li><a href="tel:+254700000000">+254 700 000 000</a></li><li><a href="mailto:stay@mashuurumanor.com">stay@mashuurumanor.com</a></li><li><a href="#" data-fd>Contact the front desk →</a></li></ul></div></div>
+<p class="copyright">&copy; <span id="year"></span> Mashuuru Manor. All rights reserved. · <a class="staff" href="#admin">Staff login</a></p></footer>
+</div>
+
+<div id="menupage" class="pg" hidden>
+<header class="site-header solid"><div class="container header-inner"><a href="#" class="logo" data-home="top">Mashuuru <em>Manor</em></a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+<nav class="nav"><a href="#" data-home="about">About</a><a href="#" data-home="rooms">Rooms</a><a href="#" data-home="packages">Packages</a><a href="#" data-home="experiences">Experiences</a><a href="#menu" class="on">Menu</a><a href="#" data-fd>Contact</a></nav>
+<a href="#" data-cart class="btn btn-gold btn-sm">Your order · <span id="cartn">0</span></a></div></header>
+<section class="menu-hero"><div class="container"><p class="eyebrow gold">Food &amp; drink</p><h1>Our <em>menu</em></h1><p class="lead">Seasonal dishes from local farms, served in the dining room, on the terrace or to your room.</p></div></section>
+<section class="container" style="padding:48px 24px 96px"><div class="tabs2" id="mtabs"></div><div class="chips" id="mchips"></div><div class="mgrid" id="mgrid"></div><p class="small" style="margin-top:32px;color:var(--muted)">Prices in KES. Tell us about any allergies when ordering. Hungry? Tap the order button, or ask the <a href="#" data-fd data-topic="Room service" style="text-decoration:underline">front desk</a>.</p></section>
+<footer class="footer"><p class="copyright" style="border:0">&copy; Mashuuru Manor · <a href="#" data-home="top" style="color:var(--gold)">Back to home</a> · <a href="#" data-home="book" style="color:var(--gold)">Book a stay</a></p></footer></div>
+<button class="fab" id="fab" data-fd>📞 Front desk</button>
+<div id="dpm" hidden></div>
+<div id="admin" hidden></div>
+<div id="modal" hidden></div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

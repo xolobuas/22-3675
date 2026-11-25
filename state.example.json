@@ -1,0 +1,110 @@
+{
+ "rooms": [
+  {
+   "id": "deluxe",
+   "name": "Meadow Deluxe Room",
+   "desc": "Soft linen, oak floors and a window onto the green valley.",
+   "price": 18500,
+   "units": 6,
+   "guests": 2,
+   "img": "room-deluxe",
+   "features": [
+    "King bed",
+    "Valley view",
+    "Rain shower",
+    "Free Wi-Fi",
+    "Breakfast included"
+   ],
+   "closed": false,
+   "blocked": []
+  },
+  {
+   "id": "suite",
+   "name": "Mountain View Suite",
+   "desc": "A freestanding bath and private balcony facing the misty peaks.",
+   "price": 28000,
+   "units": 4,
+   "guests": 3,
+   "img": "room-suite",
+   "features": [
+    "Freestanding bath",
+    "Private balcony",
+    "Mountain view",
+    "Lounge area",
+    "Breakfast included"
+   ],
+   "closed": false,
+   "blocked": []
+  },
+  {
+   "id": "cottage",
+   "name": "Garden Stone Cottage",
+   "desc": "Your own fireplace and terrace at the edge of the meadow.",
+   "price": 36000,
+   "units": 2,
+   "guests": 4,
+   "img": "room-cottage",
+   "features": [
+    "Fireplace",
+    "Private terrace",
+    "Two bedrooms",
+    "Garden access",
+    "Breakfast included"
+   ],
+   "closed": false,
+   "blocked": []
+  }
+ ],
+ "packages": [
+  {
+   "id": "honey",
+   "name": "Honeymoon Package",
+   "blurb": "Romantic stay with candle-lit dinner and spa.",
+   "price": 69000,
+   "nights": 2,
+   "roomId": "suite",
+   "img": "room-suite",
+   "inc": [
+    "2 nights in the Mountain View Suite",
+    "Candle-lit dinner on the terrace",
+    "Couples spa session",
+    "Sunrise hike for two",
+    "Late check-out"
+   ]
+  },
+  {
+   "id": "family",
+   "name": "Family Vacation",
+   "blurb": "Fun-filled stay for the entire family.",
+   "price": 95000,
+   "nights": 3,
+   "roomId": "cottage",
+   "img": "room-cottage",
+   "inc": [
+    "3 nights in the Garden Stone Cottage",
+    "All meals included",
+    "Pool time and kids activities",
+    "Guided meadow walk",
+    "Airport transfers"
+   ]
+  },
+  {
+   "id": "biz",
+   "name": "Business Stay",
+   "blurb": "Comfort and convenience for business travellers.",
+   "price": 48000,
+   "nights": 2,
+   "roomId": "deluxe",
+   "img": "lounge",
+   "inc": [
+    "2 nights in the Meadow Deluxe Room",
+    "Breakfast and working lunch",
+    "High-speed Wi-Fi",
+    "Quiet workspace in the lounge",
+    "Airport transfers"
+   ]
+  }
+ ],
+ "bookings": [],
+ "requests": []
+}
