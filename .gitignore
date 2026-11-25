@@ -1,6 +1,0 @@
-# private settings and live guest data — never commit these
-includes/config.php
-data/state.json
-data/rl_*.json
-*.log
-.DS_Store
